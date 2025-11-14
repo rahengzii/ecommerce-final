@@ -20,9 +20,9 @@
                 </div>
             </div>
             <div class="col-lg-6 text-center">
-                <img src="https://via.placeholder.com/600x400/ff6b6b/ffffff?text=Delicious+Food"
+                <!-- <img src="https://via.placeholder.com/600x400/ff6b6b/ffffff?text=Delicious+Food"
                     alt="Delicious Food"
-                    class="img-fluid rounded shadow-lg">
+                    class="img-fluid rounded shadow-lg"> -->
             </div>
         </div>
     </div>

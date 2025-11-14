@@ -138,10 +138,10 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="category-card card border-0 shadow-sm text-white overflow-hidden">
-                    <img src="https://via.placeholder.com/400x300/ffb74d/ffffff?text=Juices" 
+                    <!-- <img src="https://via.placeholder.com/400x300/ffb74d/ffffff?text=Juices" 
                          class="card-img" 
                          alt="Juices"
-                         style="height: 200px; object-fit: cover;">
+                         style="height: 200px; object-fit: cover;"> -->
                     <div class="card-img-overlay d-flex align-items-center justify-content-center" 
                          style="background: rgba(0,0,0,0.4);">
                         <div class="text-center">
