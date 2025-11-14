@@ -10,24 +10,27 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up(): void
-    {
-        Schema::create('product', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->decimal('price', 10, 2);
-            $table->string('category');
-            $table->text('description');
-            $table->integer('stock');
-            $table->string('image')->nullable();
-            $table->timestamps();
-        });
-    }
+{
+    Schema::create('product', function (Blueprint $table) {
+        $table->id();
+        $table->string('name');
+        $table->decimal('price', 10, 2);
+        $table->unsignedBigInteger('category_id');
+        $table->text('description');
+        $table->integer('stock');
+        $table->string('image')->nullable();
+        $table->timestamps();
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('product');
-    }
+        // Foreign key constraint
+        $table->foreign('category_id')
+              ->references('id')
+              ->on('category')
+              ->onDelete('cascade');
+    });
+}
+
+public function down(): void
+{
+    Schema::dropIfExists('product');
+}
 };

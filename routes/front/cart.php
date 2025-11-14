@@ -13,3 +13,9 @@ Route::post('/cart/remove', [CartController::class, 'removeCart'])
 Route::post('/cart/update', [CartController::class, 'updateCart'])
     ->name('cart_update');
 
+
+
+
+Route::post('/cart/increase', [CartController::class, 'increase'])->name('cart_increase');
+Route::post('/cart/decrease', [CartController::class, 'decrease'])->name('cart_decrease');
+Route::post('/cart/update-quantity', [CartController::class, 'updateQuantity'])->name('cart_update_quantity');
